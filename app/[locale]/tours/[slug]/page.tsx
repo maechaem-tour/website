@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function TourDetail({ params }: Props) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const tour = getTourBySlug(slug);
 
   if (!tour) notFound();
@@ -45,12 +45,12 @@ export default async function TourDetail({ params }: Props) {
       <main className="bg-background pb-20 pt-24 sm:pt-28">
         <Container>
           <nav className="mb-6 text-sm text-muted">
-            <Link href={`/${locale}`}> className="hover:text-accent">
+           <Link href={`/${locale}`} className="hover:text-accent">
               Home
             </Link>
             <span className="mx-2">/</span>
-            <Link href={`/${locale}/#tours`}> className="hover:text-accent">
-              Tours
+            <Link href={`/${locale}/#tours`} className="hover:text-accent">
+            Tours
             </Link>
             <span className="mx-2">/</span>
             <span className="text-primary">{tour.title}</span>
