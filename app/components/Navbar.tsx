@@ -72,7 +72,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="flex items-center gap-4">
     <LanguageSwitcher />
 
     <Button
