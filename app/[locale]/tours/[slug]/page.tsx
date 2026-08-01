@@ -18,7 +18,14 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return tours.map((tour) => ({ slug: tour.slug }));
+  const locales = ["th", "en", "zh", "he", "ja"];
+
+  return locales.flatMap((locale) =>
+    tours.map((tour) => ({
+      locale,
+      slug: tour.slug,
+    }))
+  );
 }
 
 export async function generateMetadata({ params }: Props) {
