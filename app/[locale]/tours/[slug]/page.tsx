@@ -11,7 +11,10 @@ import Container from "@/app/components/ui/Container";
 import { buildWhatsAppUrl } from "@/lib/utils";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{
+    locale: string;
+    slug: string;
+  }>;
 };
 
 export function generateStaticParams() {
@@ -19,7 +22,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const tour = getTourBySlug(slug);
   if (!tour) return { title: "Tour Not Found" };
   return {
@@ -42,11 +45,11 @@ export default async function TourDetail({ params }: Props) {
       <main className="bg-background pb-20 pt-24 sm:pt-28">
         <Container>
           <nav className="mb-6 text-sm text-muted">
-            <Link href="/" className="hover:text-accent">
+            <Link href={`/${locale}`}> className="hover:text-accent">
               Home
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/#tours" className="hover:text-accent">
+            <Link href={`/${locale}/#tours`}> className="hover:text-accent">
               Tours
             </Link>
             <span className="mx-2">/</span>
@@ -155,7 +158,7 @@ export default async function TourDetail({ params }: Props) {
                   {related.map((item) => (
                     <Link
                       key={item.slug}
-                      href={`/tours/${item.slug}`}
+                      href={`/${locale}/tours/${item.slug}`}
                       className="group overflow-hidden rounded-2xl border border-primary/8 bg-surface shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
                     >
                       <div className="relative aspect-video overflow-hidden">
