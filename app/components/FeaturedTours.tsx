@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 import { getFeaturedTours } from "@/app/data/tours";
 import Container from "@/app/components/ui/Container";
 import SectionHeading from "@/app/components/ui/SectionHeading";
@@ -9,6 +10,7 @@ import Button from "@/app/components/ui/Button";
 export default function FeaturedTours() {
   const tours = getFeaturedTours();
 
+  const locale = useLocale();
   return (
     <section id="tours" className="bg-background py-20 sm:py-28">
       <Container>
@@ -56,7 +58,7 @@ export default function FeaturedTours() {
                   <div className="mt-5 flex items-center justify-between gap-4 border-t border-primary/8 pt-5">
                     <p className="text-lg font-bold gradient-text">{tour.price}</p>
                     <Link
-                      href={`/tours/${tour.slug}`}
+                      href={`/${locale}/tours/${tour.slug}`}
                       className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
                     >
                       View Details
