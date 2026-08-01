@@ -9,11 +9,32 @@ export const site = {
 } as const;
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#tours", label: "Tours" },
-  { href: "#destinations", label: "Destinations" },
-  { href: "#why-us", label: "Why Us" },
-  { href: "#fleet", label: "Fleet" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
-] as const;
+  {
+    href:"#home",
+    key:"home"
+  },
+  {
+    href:"#tours",
+    key:"tours"
+  },
+  {
+    href:"#destinations",
+    key:"destinations"
+  },
+  {
+    href:"#why-us",
+    key:"whyUs"
+  },
+  {
+    href:"#fleet",
+    key:"fleet"
+  },
+  {
+    href:"#reviews",
+    key:"reviews"
+  },
+  {
+    href:"#contact",
+    key:"contact"
+  }
+];

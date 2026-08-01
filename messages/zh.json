@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "首页",
+    "tours": "旅游",
+    "destinations": "目的地",
+    "whyUs": "为什么选择我们",
+    "fleet": "我们的车辆",
+    "reviews": "评价",
+    "contact": "联系我们",
+    "whatsapp": "WhatsApp"
+  },
+
+  "Hero": {
+    "title1": "泰国北部私人旅游",
+    "title2": "专属私人旅行",
+    "description": "提供因他暖山、拜县、爱泰村等VIP私人旅游。",
+    "book": "立即预订",
+    "explore": "浏览行程"
+  }
+}

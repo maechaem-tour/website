@@ -2,9 +2,11 @@ import { destinations } from "@/app/data/destinations";
 import { navLinks, site } from "@/app/data/site";
 import Container from "@/app/components/ui/Container";
 import { buildWhatsAppUrl } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const t = useTranslations();
 
   return (
     <footer className="bg-primary text-white">
@@ -37,7 +39,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-sm text-white/70 transition-colors hover:text-white"
                   >
-                    {link.label}
+                    {t(`nav.${link.key}`)}
                   </a>
                 </li>
               ))}

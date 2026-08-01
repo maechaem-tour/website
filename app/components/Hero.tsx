@@ -1,14 +1,15 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Button from "@/app/components/ui/Button";
 import Container from "@/app/components/ui/Container";
 import { site } from "@/app/data/site";
+import { useTranslations } from "next-intl";
 
 
 const HERO_IMAGE = "/images/doi-inthanon.png";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   return (
     <section
       id="home"
@@ -52,8 +53,8 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="font-display text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Private Tours Across Northern{" "}
-            <span className="gradient-text">Thailand</span>
+            {t("title1")}{" "}
+            <span className="gradient-text">{t("title2")}</span>
           </motion.h1>
 
           <motion.p
@@ -62,8 +63,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg md:text-xl"
           >
-            Exclusive private tours to Doi Inthanon, Pai, Ban Rak Thai, Mae
-            Kampong, and hidden gems — with VIP transport and local experts.
+            {t("description")}
           </motion.p>
 
           <motion.div
@@ -73,11 +73,12 @@ export default function Hero() {
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Button href="#contact" variant="primary" size="lg">
-              Book Your Tour
-            </Button>
-            <Button href="#tours" variant="outline" size="lg">
-              Explore Tours
-            </Button>
+     {t("book")}
+  </Button>
+
+  <Button href="#tours" variant="outline" size="lg">
+  {t("explore")}
+  </Button>
           </motion.div>
 
           <motion.div

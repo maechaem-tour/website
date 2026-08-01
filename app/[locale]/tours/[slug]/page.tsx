@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { tours, getTourBySlug } from "../../data/tours";
-import TourGallery from "../../components/TourGallery";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
-import FloatingWhatsApp from "../../components/FloatingWhatsApp";
-import Button from "../../components/ui/Button";
-import Container from "../../components/ui/Container";
+import { tours, getTourBySlug } from "@/app/data/tours";
+import TourGallery from "@/app/components/TourGallery";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import FloatingWhatsApp from "@/app/components/FloatingWhatsApp";
+import Button from "@/app/components/ui/Button";
+import Container from "@/app/components/ui/Container";
 import { buildWhatsAppUrl } from "@/lib/utils";
 
 type Props = {

@@ -1,5 +1,6 @@
 "use client";
-
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/app/components/LanguageSwitcher";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks, site } from "@/app/data/site";
@@ -8,6 +9,8 @@ import { cn } from "@/lib/utils";
 import { buildWhatsAppUrl } from "@/lib/utils";
 
 export default function Navbar() {
+  const t = useTranslations("nav");
+
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -64,21 +67,23 @@ export default function Navbar() {
                 scrolled ? "text-primary/80" : "text-white/90",
               )}
             >
-              {link.label}
+              {t(link.key)}
             </a>
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <Button
-            href={buildWhatsAppUrl("Hello, I would like to book a private tour.")}
-            external
-            variant="whatsapp"
-            size="sm"
-          >
-            WhatsApp
-          </Button>
-        </div>
+        <div className="hidden lg:flex items-center gap-4">
+    <LanguageSwitcher />
+
+    <Button
+      href={buildWhatsAppUrl("Hello, I would like to book a private tour.")}
+      external
+      variant="whatsapp"
+      size="sm"
+    >
+      {t("whatsapp")}
+    </Button>
+</div>
 
         <button
           type="button"
@@ -131,7 +136,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}
                   className="font-display text-2xl font-semibold text-white hover:text-accent-light"
                 >
-                  {link.label}
+                  {t(link.key)}
                 </motion.a>
               ))}
               <motion.div
@@ -145,7 +150,7 @@ export default function Navbar() {
                   variant="whatsapp"
                   size="lg"
                 >
-                  Book on WhatsApp
+                  {t("whatsapp")}
                 </Button>
               </motion.div>
             </nav>

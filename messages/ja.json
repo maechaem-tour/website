@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "tours": "ツアー",
+    "destinations": "目的地",
+    "whyUs": "私たちについて",
+    "fleet": "車両",
+    "reviews": "レビュー",
+    "contact": "お問い合わせ",
+    "whatsapp": "WhatsApp"
+  },
+
+  "Hero": {
+    "title1": "北タイの",
+    "title2": "プライベートツアー",
+    "description": "ドイインタノン、パーイ、バーンラックタイなどをVIP車で巡ります。",
+    "book": "予約する",
+    "explore": "ツアーを見る"
+  }
+}

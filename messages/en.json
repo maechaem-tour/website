@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "destinations": "Destinations",
+    "whyUs": "Why Us",
+    "fleet": "Our Fleet",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
+
+  "Hero": {
+    "title1": "Private Tours Across",
+    "title2": "Northern Thailand",
+    "description": "Exclusive private tours to Doi Inthanon, Pai, Ban Rak Thai, Mae Kampong and more with VIP transport.",
+    "book": "Book Your Tour",
+    "explore": "Explore Tours"
+  }
+}
