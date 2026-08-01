@@ -5,8 +5,8 @@ import Button from "@/app/components/ui/Button";
 import Container from "@/app/components/ui/Container";
 import { site } from "@/app/data/site";
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=2000&q=80";
+
+const HERO_IMAGE = "/images/doi-inthanon.png";
 
 export default function Hero() {
   return (
@@ -52,8 +52,8 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="font-display text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Discover Northern Thailand{" "}
-            <span className="gradient-text">Your Way</span>
+            Private Tours Across Northern{" "}
+            <span className="gradient-text">Thailand</span>
           </motion.h1>
 
           <motion.p
@@ -87,9 +87,9 @@ export default function Hero() {
             className="mt-14 grid grid-cols-2 gap-6 border-t border-white/15 pt-10 sm:grid-cols-4"
           >
             {[
-              { value: "500+", label: "Happy Travelers" },
-              { value: "6", label: "Premium Destinations" },
-              { value: "5.0", label: "Average Rating" },
+              { value: "1000+", label: "Happy Guests" },
+              { value: "20+", label: "Tour Programs" },
+              { value: "5★", label: "Reviews" },
               { value: "100%", label: "Private Tours" },
             ].map((stat) => (
               <div key={stat.label}>

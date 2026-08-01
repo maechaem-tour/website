@@ -6,18 +6,18 @@ export const tours: Tour[] = [
     title: "Doi Inthanon National Park",
     location: "Chiang Mai",
     duration: "10 Hours",
-    price: "From 2,500 THB",
+    price: "From 3,500 THB",
     adultPrice: 2500,
     childPrice: 1800,
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&q=80",
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=1200&q=80",
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
-    ],
+    image: "/images/doi-inthanon.png",
+
+gallery: [
+  "/images/doi-inthanon-1.png",
+  "/images/doi-inthanon-2.png",
+  "/images/doi-inthanon-3.png",
+  "/images/doi-inthanon-4.png",
+],
     overview:
       "Visit Thailand's highest mountain, explore Ang Ka Nature Trail, admire the famous Twin Pagodas, hike the beautiful Pha Dok Siew Nature Trail, enjoy authentic Karen coffee and finish the day at the spectacular Wachirathan Waterfall.",
     highlights: [
@@ -51,18 +51,19 @@ export const tours: Tour[] = [
     slug: "pai",
     title: "Pai Scenic Mountain Route",
     location: "Mae Hong Son",
-    duration: "2 Days",
+    duration: "12 Hours",
     price: "From 4,500 THB",
     adultPrice: 4500,
-    childPrice: 3200,
+    childPrice: 4500,
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
-      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80",
-    ],
+   image: "/images/pai.png",
+
+gallery: [
+  "/images/pai-1.png",
+  "/images/pai-2.png",
+  "/images/pai-3.png",
+  "/images/pai-4.png",
+],
     overview:
       "Journey through 762 curves to the charming town of Pai. Discover waterfalls, hot springs, the iconic Pai Canyon, and the relaxed bohemian atmosphere of Northern Thailand's most beloved mountain retreat.",
     highlights: [
@@ -94,17 +95,17 @@ export const tours: Tour[] = [
     title: "Ban Rak Thai Tea Village",
     location: "Mae Hong Son",
     duration: "Full Day",
-    price: "From 2,800 THB",
-    adultPrice: 2800,
-    childPrice: 2000,
+    price: "From 4,500 THB",
+    adultPrice: 4500,
+    childPrice: 4500,
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=1200&q=80",
-      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200&q=80",
-      "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=1200&q=80",
-    ],
+    image: "/images/ban-rak-thai.png",
+
+gallery: [
+  "/images/ban-rak-thai.png",
+  "/images/ban-rak-thai-2.png",
+  "/images/ban-rak-thai-3.png",
+],
     overview:
       "Visit the picturesque Chinese-Yunnanese village nestled around a serene lake. Sample premium oolong tea, enjoy authentic Yunnan cuisine, and soak in the misty mountain atmosphere of this hidden gem near the Myanmar border.",
     highlights: [
@@ -137,17 +138,17 @@ export const tours: Tour[] = [
     title: "Mae Kampong Village",
     location: "Chiang Mai",
     duration: "Full Day",
-    price: "From 2,200 THB",
-    adultPrice: 2200,
-    childPrice: 1600,
+    price: "From 2,800 THB",
+    adultPrice: 2800,
+    childPrice: 2800,
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80",
-      "https://images.unsplash.com/photo-1513836279014-a65822c6e0db?w=1200&q=80",
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=80",
-    ],
+    image: "/images/mae-kampong.png",
+
+gallery: [
+  "/images/mae-kampong-1.png",
+  "/images/mae-kampong-2.png",
+  "/images/mae-kampong-3.png",
+],
     overview:
       "Experience life in a peaceful Karen hill-tribe village surrounded by lush forest. Walk the coffee trail, visit the Flight of the Gibbon, enjoy homestay-style lunch, and breathe the cool mountain air of this eco-tourism paradise.",
     highlights: [
@@ -182,15 +183,15 @@ export const tours: Tour[] = [
     duration: "Half Day",
     price: "From 1,800 THB",
     adultPrice: 1800,
-    childPrice: 1200,
+    childPrice: 1800,
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1200&q=80",
-      "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=1200&q=80",
-      "https://images.unsplash.com/photo-1528127269322-539801943592?w=1200&q=80",
-    ],
+    image: "/images/sticky-waterfall.png",
+
+gallery: [
+  "/images/sticky-waterfall.png",
+  "/images/sticky-waterfall-1.png",
+  "/images/sticky-waterfall-2.png",
+],
     overview:
       "Climb the unique calcite waterfall where the mineral-coated rocks let you walk up the flowing water with ease. A fun, family-friendly adventure combined with lush jungle surroundings and refreshing natural pools.",
     highlights: [
@@ -226,13 +227,13 @@ export const tours: Tour[] = [
     adultPrice: 1600,
     childPrice: 900,
     featured: true,
-    image:
-      "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=1200&q=80",
-      "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1200&q=80",
-      "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200&q=80",
-    ],
+    image: "/images/elephant.png",
+
+gallery: [
+  "/images/elephant.png",
+  "/images/elephant-1.png",
+  "/images/elephant-2.png",
+],
     overview:
       "Spend an unforgettable day with rescued elephants in an ethical, chain-free sanctuary. Feed them, walk alongside them through the jungle, prepare healthy vitamin balls, and learn about conservation efforts in Chiang Mai.",
     highlights: [
